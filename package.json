@@ -4,9 +4,10 @@
   "description": "typescript-node-sandbox",
   "main": "src/index.ts",
   "scripts": {
-    "test": "npx jest",
+    "lint": "eslint . --ext .ts --quiet --fix",
+    "test": "jest --coverage",
     "start:dev": "nodemon",
-    "lint": "eslint . --ext .ts --quiet --fix"
+    "build": "tsc"
   },
   "keywords": [],
   "author": "Pulkit Gupta",
